@@ -1,6 +1,6 @@
-# Bucak Isi Sistemleri
+# Kale Teknik Isi Sistemleri
 
-Yasir Bucak icin hazirlanmis; Afyonkarahisar genelinde dogalgaz tesisati, kombi, petek, isi pompasi ve klima bakim-onarim odakli tanitim sitesi.
+Kale Teknik Isi Sistemleri icin hazirlanmis; Afyonkarahisar genelinde dogalgaz tesisati, kombi, petek, isi pompasi ve klima bakim-onarim odakli tanitim sitesi.
 
 ## Lokal Calistirma
 
