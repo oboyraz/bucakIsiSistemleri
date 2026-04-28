@@ -1,0 +1,20 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="badgeBg" x1="10" y1="8" x2="53" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E7C078"/>
+      <stop offset="1" stop-color="#B97C1F"/>
+    </linearGradient>
+    <linearGradient id="flameFill" x1="32" y1="19.5" x2="32" y2="42.9" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF5D7"/>
+      <stop offset="1" stop-color="#F2B347"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="18" fill="url(#badgeBg)"/>
+  <rect x="4.75" y="4.75" width="54.5" height="54.5" rx="17.25" stroke="#FFF4DA" stroke-opacity="0.32" stroke-width="1.5"/>
+  <path d="M17 25H21V19H27V25H32V19H37V25H43V19H47V45C47 49.4183 43.4183 53 39 53H25C20.5817 53 17 49.4183 17 45V25Z" fill="#12365D"/>
+  <path d="M18 26H46" stroke="#F4D39E" stroke-opacity="0.55" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M32 19.5C35.1 23.1 38.7 27.2 38.7 31.4C38.7 36.4 35.7 40.8 32 42.9C28.3 40.8 25.3 36.4 25.3 31.4C25.3 27.2 28.9 23.1 32 19.5Z" fill="url(#flameFill)"/>
+  <path d="M32 26.8C33.7 28.9 35 30.8 35 33.2C35 35.6 33.9 37.7 32 39.1C30.1 37.7 29 35.6 29 33.2C29 30.8 30.3 28.9 32 26.8Z" fill="#FFF9EC"/>
+  <path d="M24 45.5H40" stroke="#DCA84B" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M25 48.5H39" stroke="#DCA84B" stroke-opacity="0.72" stroke-width="2.2" stroke-linecap="round"/>
+</svg>
