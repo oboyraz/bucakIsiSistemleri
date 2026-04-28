@@ -116,18 +116,23 @@ textarea {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
-  border-radius: 18px;
+  width: 118px;
+  height: 82px;
+  padding: 8px;
+  border-radius: 24px;
   overflow: hidden;
   flex: 0 0 auto;
-  box-shadow: 0 14px 28px rgba(7, 20, 37, 0.22);
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  box-shadow: 0 16px 32px rgba(7, 20, 37, 0.24);
 }
 
 .brand-mark {
   display: block;
   width: 100%;
   height: 100%;
+  object-fit: contain;
+  border-radius: 18px;
 }
 
 .topbar-actions {
@@ -303,8 +308,29 @@ textarea {
 }
 
 .hero-card-panel {
+  position: relative;
+  overflow: hidden;
   padding: 28px;
   border-radius: var(--radius-lg);
+}
+
+.hero-card-panel > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-card-panel::after {
+  content: "";
+  position: absolute;
+  right: -34px;
+  bottom: -12px;
+  width: 240px;
+  height: 170px;
+  background: url("kale.jpeg") center / contain no-repeat;
+  opacity: 0.075;
+  filter: grayscale(1) contrast(0.92) brightness(1.08);
+  transform: rotate(-7deg);
+  pointer-events: none;
 }
 
 .card-label {
@@ -427,11 +453,27 @@ textarea {
 }
 
 .about {
+  position: relative;
+  overflow: hidden;
   margin-top: 70px;
   padding: 42px 0;
   background:
     radial-gradient(circle at top left, rgba(214, 162, 74, 0.18), transparent 25%),
     rgba(255, 255, 255, 0.9);
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  right: -36px;
+  top: 50%;
+  width: 380px;
+  height: 250px;
+  background: url("kale.jpeg") center / contain no-repeat;
+  opacity: 0.06;
+  filter: grayscale(1) contrast(0.92) brightness(1.08);
+  transform: translateY(-50%) rotate(-9deg);
+  pointer-events: none;
 }
 
 .about-grid {
@@ -454,6 +496,30 @@ textarea {
   grid-template-columns: 0.92fr 1.08fr;
   gap: 18px;
   margin-top: 28px;
+}
+
+.contact-grid > .contact-card:first-child {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-grid > .contact-card:first-child > * {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-grid > .contact-card:first-child::after {
+  content: "";
+  position: absolute;
+  right: -22px;
+  top: 14px;
+  width: 220px;
+  height: 150px;
+  background: url("kale.jpeg") center / contain no-repeat;
+  opacity: 0.08;
+  filter: grayscale(1) contrast(0.92) brightness(1.08);
+  transform: rotate(-10deg);
+  pointer-events: none;
 }
 
 .contact-list {
@@ -576,11 +642,25 @@ textarea {
     width: 100%;
   }
 
+  .brand-badge {
+    width: 98px;
+    height: 70px;
+    padding: 7px;
+  }
+
   .hero-card-panel,
   .feature-card,
   .service-card,
   .contact-card {
     padding: 22px;
+  }
+
+  .hero-card-panel::after,
+  .about::after,
+  .contact-grid > .contact-card:first-child::after {
+    width: 170px;
+    height: 118px;
+    right: -20px;
   }
 
   .services,
